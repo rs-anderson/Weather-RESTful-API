@@ -31,7 +31,7 @@ def get_num_days(start, end):
     start_date = datetime.strptime(start, '%Y-%m-%d')
     end_date = datetime.strptime(end, '%Y-%m-%d')
     delta = end_date - start_date
-    return delta.days
+    return delta.days + 1
 
 
 def get_num_obs(start, end, aggregator):
